@@ -1,0 +1,220 @@
+/* Fuentes */
+body {
+  margin: 0;
+  font-family: 'Michroma', sans-serif;
+  background: white;
+  color: black;
+}
+
+/* HEADER */
+header {
+  background-color: #f0f0f0;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.divlogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 300px;
+  max-width: 90vw;
+}
+
+.titulo {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 24px;
+  text-decoration: underline #fef046;
+  margin-top: 10px;
+}
+
+/* INTRO */
+.intro {
+  padding: 40px 20px 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.oracion {
+  font-size: 24px;
+  max-width: 900px;
+  margin: 0 auto 20px;
+  line-height: 1.3;
+  font-family: 'Michroma', sans-serif;
+}
+
+.contacto {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  color: black;
+  background-color: #f5f5f5;
+  border: 2px solid #333;
+  padding: 12px 20px;
+  border-radius: 8px;
+  max-width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.paleta {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.texto1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  text-decoration: underline #fef046;
+  max-width: 400px;
+  margin: 0;
+  text-align: center;
+}
+
+/* PALETAS */
+.paaletas {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  text-decoration: underline #fef046;
+  text-align: center;
+  margin: 60px 0 30px;
+}
+
+.divpaletas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.imagen {
+  width: 45%;
+  text-align: center;
+}
+
+.paleta1 {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.fuentepaletas {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contactos1 h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.oracion2 {
+  font-family: 'Michroma', sans-serif;
+  font-size: 24px;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  line-height: 1.3;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.social-icons a img {
+  width: 54px;
+  height: 54px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+footer h3 {
+  font-family: 'Michroma', sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .texto1 {
+    font-size: 28px;
+    max-width: 90%;
+  }
+
+  .imagen {
+    width: 90%;
+  }
+
+  .paleta {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 18px;
+  }
+
+  .oracion,
+  .oracion2 {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+
+  .contacto {
+    font-size: 22px;
+    max-width: 100%;
+  }
+
+  .paaletas {
+    font-size: 30px;
+  }
+
+  .fuentepaletas {
+    font-size: 16px;
+  }
+
+  .social-icons a img {
+    width: 40px;
+    height: 40px;
+  }
+}
